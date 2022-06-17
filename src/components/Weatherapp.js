@@ -47,8 +47,8 @@ const Weatherapp = () => {
           
             {city.map((item) => (
           <div className="one">
-            <p> Temperature   {`${item.main.temp}`}</p>
-            <p> Min_Temp {item.main.temp_min}</p> <p> Max_temp{item.main.temp_max}</p>
+            <p> {`${item.main.temp}`} </p>
+            <p> Minimum {item.main.temp_min}</p> <p> Maximum <br/>{item.main.temp_max}</p>
             <img width={"70px"} src={`https://openweathermap.org/img/w/${item.weather[0].icon}.png`}/>
             <p>{`${item.weather[0].description}`}</p>
           </div>
