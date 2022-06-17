@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react";
 import "./css/style.css";
+import { FaSearch,FaMapMarkerAlt } from "react-icons/fa";
 
 const Weatherapp = () => {
 
@@ -21,12 +22,19 @@ const Weatherapp = () => {
         <>
           <div className="box">
             <div className="inputData">
+               <div className="iconlcsrc">
+                  <FaMapMarkerAlt  size={'1.8em'} />
+               </div>
                <input
                type="search"
                 value={search}
                className="inputField" 
                onChange= { (event) => {
-                   setSearch(event.target.value) } } />
+                   setSearch(event.target.value) } }/>
+                    <div className="iconlcsrc">
+                    <FaSearch  size={'1.5em'} />
+                    </div>
+                  
             </div>
           {!city ? (
             <p>No city Found!</p>

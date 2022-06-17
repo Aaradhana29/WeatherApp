@@ -103,17 +103,30 @@
     
     
     .box{
-        width: 35%;
+        width: 37%;
         height: auto;
-        border: 1px solid;
+        border: 1px solid lightgray;
         margin: auto;
+        box-shadow: 0 8px 10px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 10%), 0 -8px 12px 0 rgb(0 0 0 / 5%), 0 -2px 3px -2px rgb(0 0 0 / 1%);
+    }
+    .iconlcsrc{
+        border: 1px solid white;
+        width: 35px;
+        height: 35px;
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 28px;
+        margin-left: 20px;
     }
     .inputData input{
-        width: 80%;
+        display: inline-block;
+        vertical-align: top;
+        width: 78%;
         height: 50px;
         border: 1px solid lightgray ;
         margin-top: 20px;
-        margin-left: 50px;
         border-radius: 10px;
         box-shadow: 0 8px 10px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 10%), 0 -8px 12px 0 rgb(0 0 0 / 5%), 0 -2px 3px -2px rgb(0 0 0 / 1%);
     }
+
+   
