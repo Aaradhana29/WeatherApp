@@ -114,14 +114,23 @@
         margin: auto;
         box-shadow: 0 8px 10px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 10%), 0 -8px 12px 0 rgb(0 0 0 / 5%), 0 -2px 3px -2px rgb(0 0 0 / 1%);
     }
-    .iconlcsrc{
+    .iconlocation{
         border: 1px solid white;
         width: 35px;
         height: 35px;
         display: inline-block;
         vertical-align: top;
         margin-top: 28px;
-        margin-left: 30px;
+        margin-left: 50px;
+    }
+    .iconsrc{
+        border: 1px solid white;
+        width: 35px;
+        height: 35px;
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 28px;
+        margin-left: 10px;
     }
     .inputData input{
         display: inline-block;
@@ -136,10 +145,10 @@
     }
     .week{
         display: flex;
-        border: 1px solid;
+        
         margin-top: 20px;
         overflow: scroll;
-        
+        background-color: rgb(231, 241, 244);
     }
    .one{
     width: 200px;
@@ -148,8 +157,10 @@
     margin-left: 10px;
     border-radius: 5px;
     font-size: 20px;
-    padding: 18px;
+    padding: 10px;
     line-height: 18px;
+    text-align: center;
+    color: blue;
    }
    :hover.one{
     border: 1px solid blue;

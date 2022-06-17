@@ -22,7 +22,7 @@ const Weatherapp = () => {
         <>
           <div className="box">
             <div className="inputData">
-               <div className="iconlcsrc">
+               <div className="iconlocation">
                   <FaMapMarkerAlt  size={'1.8em'} />
                </div>
                <input
@@ -31,20 +31,14 @@ const Weatherapp = () => {
                className="inputField" 
                onChange= { (event) => {
                    setSearch(event.target.value) } }/>
-                    <div className="iconlcsrc">
+                    <div className="iconsrc" >
                     <FaSearch  size={'1.5em'} />
                     </div>
-                  
             </div>
           {!city ? (
             <p>No city Found!</p>
          ) : (  
             <div className="week">
-            {/* <h2 className="location">
-               {search}
-            </h2> */}
-            
-          
             {city.map((item) => (
           <div className="one">
             <p> {`${item.main.temp}`} </p>
@@ -54,12 +48,10 @@ const Weatherapp = () => {
           </div>
         ))}
             </div>
-            
-         
-              
          )} 
 
-          </div>
+         
+      </div>
         </>
     )
 }
