@@ -39,30 +39,23 @@ const Weatherapp = () => {
           {!city ? (
             <p>No city Found!</p>
          ) : (  
-            <div className="info">
-            <h2 className="location">
+            <div className="week">
+            {/* <h2 className="location">
                {search}
-            </h2>
-            <div>
+            </h2> */}
+            
           
             {city.map((item) => (
-          <div>
-            <h1>{`${item.main.temp}`}</h1>
-            <h1>{`${item.weather[0].description}`}</h1>
-            <img src={`https://openweathermap.org/img/w/${item.weather[0].icon}.png`}/>
-            
-          <h2>
-          {item.main.temp_min}  
-       </h2>
-
-       <h3>
-          {item.main.temp_max}  
-       </h3>
-       </div>
+          <div className="one">
+            <p> Temperature   {`${item.main.temp}`}</p>
+            <p> Min_Temp {item.main.temp_min}</p> <p> Max_temp{item.main.temp_max}</p>
+            <img width={"70px"} src={`https://openweathermap.org/img/w/${item.weather[0].icon}.png`}/>
+            <p>{`${item.weather[0].description}`}</p>
+          </div>
         ))}
             </div>
             
-         </div>
+         
               
          )} 
 

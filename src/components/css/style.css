@@ -101,9 +101,14 @@
     }
     } */
     
+   /* @media  screen and (min-width: 1200px) {
+    body {
+      margin-left: 25%
+        }
+   } */
     
     .box{
-        width: 37%;
+        width: 51%;
         height: auto;
         border: 1px solid lightgray;
         margin: auto;
@@ -128,5 +133,15 @@
         border-radius: 10px;
         box-shadow: 0 8px 10px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 10%), 0 -8px 12px 0 rgb(0 0 0 / 5%), 0 -2px 3px -2px rgb(0 0 0 / 1%);
     }
-
+    .week{
+        display: flex;
+        border: 1px solid;
+        margin-top: 20px;
+        overflow: scroll;
+    }
+   .one{
+    width: 200px;
+    height: 250px;
+    border:1px solid red;
+   }
    
