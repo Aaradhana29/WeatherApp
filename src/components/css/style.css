@@ -6,38 +6,38 @@
    } */
     
     .box{
-        width: 57%;
+        width: 800px;
         height: auto;
-        
+        /* border: 1px solid red; */
         margin: auto;
        }
     .iconlocation{
-        border: 1px solid white;
+        /* border: 1px solid blue; */
         width: 35px;
         height: 35px;
-        display: inline-block;
-        vertical-align: top;
-        margin-top: 28px;
-        margin-left: 50px;
+        position: absolute;
+        margin-top: 35px;
+        margin-left: 15px;
     }
     .iconsrc{
-        border: 1px solid white;
+        /* border: 1px solid green; */
         width: 35px;
         height: 35px;
-        display: inline-block;
-        vertical-align: top;
-        margin-top: 28px;
-        margin-left: 10px;
+        position: absolute;
+        margin-top: 35px;
+        margin-left: 750px;
     }
+    
     .inputData input{
         display: inline-block;
         vertical-align: top;
-        width: 78%;
+        width: 800px;
         height: 50px;
         border: 1px solid lightgray;
         font-size: 20px;
         margin-top: 20px;
-        border-radius: 10px;
+        text-align:center;
+        border-radius: 5px;
         box-shadow: 0 8px 10px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 10%), 0 -8px 12px 0 rgb(0 0 0 / 5%), 0 -2px 3px -2px rgb(0 0 0 / 1%);
     }
     .week{
@@ -45,14 +45,11 @@
         margin-top: 20px;
         overflow-x: scroll;
         width: 800px;
-        
+        /* border: 1px solid yellow; */
     }
    .one{
-    
     height: 170px;
-   
     font-size: 15px;
-   
     text-align: center;
     font-weight: bold;
    }
@@ -65,7 +62,7 @@
     display: inline-block;
    }
    :hover.one{
-    border: 5px solid lightblue;
+    border: 5px solid rgb(77, 200, 241);
     box-shadow: 0 8px 10px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 10%), 0 -8px 12px 0 rgb(0 0 0 / 5%), 0 -2px 3px -2px rgb(0 0 0 / 1%);
    }
    

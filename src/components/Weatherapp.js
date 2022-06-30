@@ -10,7 +10,6 @@ const Weatherapp = () => {
      useEffect ( () => {
        const fetchApi = async () => {
           const url = `https://api.openweathermap.org/data/2.5/forecast?q=${search}&cnt=8&units=metric&appid=c4152b34e9dc3c82f6b0f7f661bd609f`
-          
           const response = await fetch(url);
           const resJson = await response.json();
           //console.log(resJson.list[0])
@@ -24,17 +23,12 @@ const Weatherapp = () => {
           <div className="box">
             <div className="inputData">
                <div className="iconlocation">
-                  <FaMapMarkerAlt  size={'1.8em'} />
+                  <FaMapMarkerAlt  size={'1.3em'} />
                </div>
-               <input
-               type="search"
-                value={search}
-               className="inputField" 
-               onChange= { (event) => {
-                   setSearch(event.target.value) } }/>
-                    <div className="iconsrc" >
-                    <FaSearch  size={'1.5em'} />
-                    </div>
+               <div className="iconsrc" >
+                    <FaSearch  size={'1.3em'} />
+                </div>
+               <input type="search" value={search} className="inputField" onChange= { (event) => { setSearch(event.target.value) } }/>
             </div>
           {!city ? (
             <p>No city Found!</p>
