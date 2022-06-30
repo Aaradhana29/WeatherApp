@@ -9,7 +9,7 @@ const Weatherapp = () => {
 
      useEffect ( () => {
        const fetchApi = async () => {
-          const url = `https://api.openweathermap.org/data/2.5/forecast?q=${search}&cnt=7&units=metric&appid=c4152b34e9dc3c82f6b0f7f661bd609f`
+          const url = `https://api.openweathermap.org/data/2.5/forecast?q=${search}&cnt=8&units=metric&appid=c4152b34e9dc3c82f6b0f7f661bd609f`
           
           const response = await fetch(url);
           const resJson = await response.json();
@@ -42,15 +42,14 @@ const Weatherapp = () => {
             <div className="week">
             {city.map((item) => (
           <div className="one">
-            <p> {`${item.main.temp}`} </p>
-            <p> Minimum {item.main.temp_min}</p> <p> Maximum <br/>{item.main.temp_max}</p>
-            <img width={"70px"} src={`https://openweathermap.org/img/w/${item.weather[0].icon}.png`}/>
+            <p id="max">{item.main.temp_max.toFixed(0)}°</p> <p id="min">{item.main.temp_min.toFixed(0)}°</p> 
+            <img width={"60px"} height={"60px"} src={`https://openweathermap.org/img/w/${item.weather[0].icon}.png`}/>
             <p>{`${item.weather[0].description}`}</p>
           </div>
         ))}
             </div>
          )} 
-
+       
          
       </div>
         </>
