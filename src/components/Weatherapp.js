@@ -3,7 +3,7 @@ import "./css/style.css";
 import { FaSearch,FaMapMarkerAlt } from "react-icons/fa";
 import GeoLocation from "./Geolocation";
 import Debouncing from "./Debouncing"
-
+import graph from "../graph.png"
 const Weatherapp = () => {
    
     const location = GeoLocation();
@@ -47,7 +47,24 @@ const Weatherapp = () => {
             </div>
          )} 
        
-         
+       <div className="currentdata">
+          <div>
+            <h1 style={{fontSize:"50px" ,marginLeft:"30px"}}>33°C
+             <img className="currentpic"  src="https://uxwing.com/wp-content/themes/uxwing/download/27-weather/weather.png"/> </h1>
+          </div>
+          <div style={{overflow:"scroll"}}>
+            <img src={graph}/>
+          </div>
+          <div>
+            <div className="pressure"><p className="bold">Pressure</p><p style={{marginLeft:"20px"}}>1000 hpa</p></div>
+            <div className="humidity"><p className="bold">Humidity</p><p style={{marginLeft:"20px"}}>50 %</p></div>
+          </div>
+          <div>
+            <div className="sunrise"><p className="bold">Sunrise</p><p style={{marginLeft:"20px"}}>6:30am</p></div>
+            <div className="sunset"><p className="bold">Sunset</p><p style={{marginLeft:"20px"}}>6:30pm</p></div>
+          </div>
+       </div>
+          
       </div>
         </>
     )

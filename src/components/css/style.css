@@ -48,7 +48,7 @@
         /* border: 1px solid yellow; */
     }
    .one{
-    height: 170px;
+    height: 180px;
     font-size: 15px;
     text-align: center;
     font-weight: bold;
@@ -66,3 +66,62 @@
     box-shadow: 0 8px 10px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 10%), 0 -8px 12px 0 rgb(0 0 0 / 5%), 0 -2px 3px -2px rgb(0 0 0 / 1%);
    }
    
+   .currentdata{
+    width: 800px;
+    height: auto;
+    margin-top: 30px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    box-shadow: 0 8px 10px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 10%), 0 -8px 12px 0 rgb(0 0 0 / 5%), 0 -2px 3px -2px rgb(0 0 0 / 1%);
+   }
+
+   .currentpic{
+    margin-left:20px;
+    width:45px;
+    height:45px;
+   }
+   .pressure{
+    width: 46%;
+    height: 60px;
+    margin-top: 30px;
+    background-color: rgb(229, 245, 239);
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+    line-height: 5px;
+   }
+   .humidity{
+    width: 46%;
+    height: 60px;
+    margin-top: 30px;
+    background-color: rgb(229, 245, 239);
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+    line-height: 5px;
+   }
+   .bold{
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 20px;
+   }
+
+   .sunrise{
+    height: 60px;
+    width: 46%;
+    margin-top: 30px;
+    display: inline-block;
+    vertical-align: top;
+    
+    line-height: 5px;
+   }
+   .sunset{
+    height: 60px;
+    width: 46%;
+    margin-top: 30px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+    line-height: 5px;
+    text-align: end;
+   }
