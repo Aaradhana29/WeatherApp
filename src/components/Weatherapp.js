@@ -1,12 +1,15 @@
 import React, {useEffect, useState} from "react";
 import "./css/style.css";
 import { FaSearch,FaMapMarkerAlt } from "react-icons/fa";
+import GeoLocation from "./Geolocation";
+
 
 const Weatherapp = () => {
 
+   const location = GeoLocation();
     const [city, setCity] = useState([]);
     const [search, setSearch] = useState("Varanasi");
-
+    
      useEffect ( () => {
        const fetchApi = async () => {
           const url = `https://api.openweathermap.org/data/2.5/forecast?q=${search}&cnt=8&units=metric&appid=c4152b34e9dc3c82f6b0f7f661bd609f`
