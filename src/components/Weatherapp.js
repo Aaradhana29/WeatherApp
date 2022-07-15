@@ -4,6 +4,7 @@ import { FaSearch,FaMapMarkerAlt } from "react-icons/fa";
 import GeoLocation from "./Geolocation";
 import Debouncing from "./Debouncing"
 import graph from "../graph.png"
+import sungraph from "../sungraph.png"
 const Weatherapp = () => {
    
     const location = GeoLocation();
@@ -63,6 +64,7 @@ const Weatherapp = () => {
             <div className="sunrise"><p className="bold">Sunrise</p><p style={{marginLeft:"20px"}}>6:30am</p></div>
             <div className="sunset"><p className="bold">Sunset</p><p style={{marginLeft:"20px"}}>6:30pm</p></div>
           </div>
+          <img width={"790px"} src={sungraph}/>
        </div>
           
       </div>
