@@ -5,6 +5,7 @@ import GeoLocation from "./Geolocation";
 import Debouncing from "./Debouncing";
 import sungraph from "../sungraph.png"
 import Graph from "./Graph";
+import SunGraph from "./SunGraph";
 
 
 const Weatherapp = () => {
@@ -72,6 +73,7 @@ const Weatherapp = () => {
             <div className="sunset"><p className="bold">Sunset</p><p style={{marginLeft:"20px"}}>6:30pm</p></div>
           </div>
           <img width={"790px"} src={sungraph}/>
+          
        </div>
           
       </div>
