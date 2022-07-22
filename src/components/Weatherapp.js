@@ -5,6 +5,9 @@ import GeoLocation from "./Geolocation";
 import Debouncing from "./Debouncing"
 import graph from "../graph.png"
 import sungraph from "../sungraph.png"
+import Graph from "./Graph";
+
+
 const Weatherapp = () => {
    
     const location = GeoLocation();
@@ -54,7 +57,13 @@ const Weatherapp = () => {
              <img className="currentpic"  src="https://uxwing.com/wp-content/themes/uxwing/download/27-weather/weather.png"/> </h1>
           </div>
           <div style={{overflow:"scroll"}}>
-            <img src={graph}/>
+            {/* <img src={graph}/> */}
+            {!city ? (
+              <p>Please Enter City Name</p>
+            ) : (
+              <Graph data={city}/>
+            )}
+            {/* <Graph data={city}/> */}
           </div>
           <div>
             <div className="pressure"><p className="bold">Pressure</p><p style={{marginLeft:"20px"}}>1000 hpa</p></div>
