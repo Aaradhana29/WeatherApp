@@ -8,7 +8,6 @@ import Graph from "./Graph";
 
 
 const Weatherapp = () => {
-   
     const location = GeoLocation();
     const [city, setCity] = useState([]);
     const [search, setSearch] = useState("Varanasi");
