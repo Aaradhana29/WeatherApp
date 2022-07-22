@@ -62,7 +62,7 @@ const Weatherapp = () => {
             ) : (
               <Graph data={city}/>
             )}
-            {/* <Graph data={city}/> */}
+            
           </div>
           <div>
             <div className="pressure"><p className="bold">Pressure</p><p style={{marginLeft:"20px"}}>1000 hpa</p></div>
