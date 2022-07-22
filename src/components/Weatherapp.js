@@ -55,7 +55,7 @@ const Weatherapp = () => {
              <img className="currentpic"  src="https://uxwing.com/wp-content/themes/uxwing/download/27-weather/weather.png"/> </h1>
           </div>
           <div style={{overflow:"scroll"}}>
-            {/* <img src={graph}/> */}
+           
             {!city ? (
               <p>Please Enter City Name</p>
             ) : (
