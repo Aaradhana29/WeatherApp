@@ -2,8 +2,7 @@ import React, {useEffect, useState} from "react";
 import "./css/style.css";
 import { FaSearch,FaMapMarkerAlt } from "react-icons/fa";
 import GeoLocation from "./Geolocation";
-import Debouncing from "./Debouncing"
-import graph from "../graph.png"
+import Debouncing from "./Debouncing";
 import sungraph from "../sungraph.png"
 import Graph from "./Graph";
 
