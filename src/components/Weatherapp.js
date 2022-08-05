@@ -4,8 +4,9 @@ import { FaSearch,FaMapMarkerAlt } from "react-icons/fa";
 import GeoLocation from "./Geolocation";
 import Debouncing from "./Debouncing";
 import sungraph from "../sungraph.png"
+// import graph from "../graph.png";
 import Graph from "./Graph";
-import SunGraph from "./SunGraph";
+// import SunGraph from "./SunGraph";
 
 
 const Weatherapp = () => {
@@ -56,7 +57,7 @@ const Weatherapp = () => {
              <img className="currentpic"  src="https://uxwing.com/wp-content/themes/uxwing/download/27-weather/weather.png"/> </h1>
           </div>
           <div style={{overflow:"scroll"}}>
-           
+           {/* <img src={graph}/> */}
             {!city ? (
               <p>Please Enter City Name</p>
             ) : (
