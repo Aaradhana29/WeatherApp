@@ -54,7 +54,8 @@ const Weatherapp = () => {
        <div className="currentdata">
           <div>
             <h1 style={{fontSize:"50px" ,marginLeft:"30px"}}>33°C
-             <img className="currentpic"  src="https://uxwing.com/wp-content/themes/uxwing/download/27-weather/weather.png"/> </h1>
+             <img className="currentpic"  src="https://scx2.b-cdn.net/gfx/news/2019/weatherforec.jpg"/> </h1>
+             {/* <img className="currentpic"  src="https://thumbs.dreamstime.com/b/weather-forecast-icon-seasons-clouds-label-cloudy-weather-forecast-white-background-seasons-clouds-logo-vector-artwork-weather-126508082.jpg"/> </h1> */}
           </div>
           <div style={{overflow:"scroll"}}>
            {/* <img src={graph}/> */}
